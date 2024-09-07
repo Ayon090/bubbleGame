@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: tomato; */
+}
+body {
+  background-color: crimson;
+}
+#main {
+  width: 1200px;
+  margin: 0px auto;
+  margin-bottom: 12px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: crimson;
+  color: #fff;
+  padding: 32px 0;
+}
+.head {
+  display: flex;
+  align-items: center;
+}
+.head span {
+  font-size: 25px;
+  padding-right: 12px;
+  font-weight: 600;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: crimson;
+  width: 55px;
+  height: 45px;
+  font-size: 25px;
+  font-weight: 600;
+  /* text-align: center; */
+}
+
+.gamePart {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  /* height: calc(100% - 100px); */
+  height: calc(100%-100px);
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bubbles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: crimson;
+  font-weight: 600;
+  color: #fff;
+  font-size: 21px;
+  padding: 20px;
+  margin: 5px 8px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.bubbles:hover {
+  background-color: black;
+}
+/* After timeout this section must be visible on the screen*/
+#afterGame {
+  display: none;
+  background-color: #fff !important;
+  padding-top: 81px;
+  padding-bottom: 100px;
+}
+#afterGame h1 {
+  font-size: 80px;
+  text-align: center;
+  color: #ff0000;
+}
+#afterGame p {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  font-weight: 600;
+}
+
+#afterGame span {
+  background-color: #ff0000;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer !important;
+  font-weight: 600;
+  border: none;
+  padding: 8px 12px;
+  transition: 0.4s;
+}
+#afterGame span i {
+  font-size: 17px;
+}
+span.play {
+  position: absolute;
+  left: 45%;
+  margin-top: 30px;
+}
+
+#afterGame span:hover {
+  background-color: #b30000;
+}
+
