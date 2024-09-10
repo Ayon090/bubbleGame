@@ -1,3 +1,10 @@
+// pre-Loader
+window.onload = function () {
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("main").style.display = "block";
+};
+
+
 let timer = 30;
 let scores = 0;
 let hit = 0;

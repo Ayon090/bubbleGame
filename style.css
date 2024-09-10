@@ -7,6 +7,12 @@
 body {
   background-color: crimson;
 }
+#loading {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 #main {
   width: 1200px;
   margin: 0px auto;
@@ -116,3 +122,29 @@ span.play {
   background-color: #b30000;
 }
 
+
+
+@media (max-width: 600px) {
+  #main {
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 12px;
+  }
+  .gamePart {
+    width: 100vw;
+  }
+  .head span {
+    font-size: 20px;
+    padding-right: 6px;
+  }
+  .top {
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+  }
+  span.play {
+    position: absolute;
+    left: 36%;
+    margin-top: 25px;
+  }
+}
